@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | AJ's 5 Star Services</title>
+<meta name="description" content="Get in touch with AJ's 5 Star Services for government contracting, subcontracting, and operational support inquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A5</span>
+      AJ's 5 Star Services
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="government-contracting.html">Government Contracting</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="assets/capability-statement.pdf" class="nav-cta">Capability Statement</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="contact-hero blueprint">
+  <div class="wrap">
+    <span class="eyebrow">Get In Touch</span>
+    <h1 style="color:var(--off-white); font-size: clamp(32px, 4.4vw, 48px);">Let's talk about your next project.</h1>
+    <p class="lede">Whether you're a contracting officer, a prime contractor, or a subcontractor looking to team, we'd like to hear from you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div>
+        <div class="contact-info-item">
+          <div class="eyebrow">Email</div>
+          <a href="mailto:info@aj5starservices.com">info@aj5starservices.com</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="eyebrow">Phone</div>
+          <a href="tel:+10000000000">(000) 000-0000</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="eyebrow">LinkedIn</div>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/company/aj5starservices</a>
+        </div>
+      </div>
+
+      <div>
+        <!--
+          FORM SUBMISSION NOTE:
+          This is a static site with no backend, so the form needs a form-handling
+          service to actually deliver submissions to your inbox. Formspree is a
+          simple option — sign up free at formspree.io, create a form, and replace
+          "YOUR_FORM_ID" below with the ID they give you.
+        -->
+        <form class="inquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+          <div>
+            <label for="inquiry-type">How can we help?</label>
+            <select id="inquiry-type" name="inquiry_type">
+              <option>Subcontracting Inquiry</option>
+              <option>Prime Contractor Inquiry</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self:start;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-copy">&copy; <span id="year"></span> AJ's 5 Star Services. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="government-contracting.html">Government Contracting</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
